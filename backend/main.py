@@ -20,6 +20,7 @@ app.add_middleware(
     allow_origins=["http://localhost:5173", 
                    "http://localhost:5174", 
                    "https://resume-generator-git.vercel.app",
+                   "https://resume-generator-gitl.vercel.app",
                    "https://resume-generator-git-main-unzevas-projects.vercel.app",
                    "https://resume-generator-ibq3132ev-unzevas-projects.vercel.app",
                    ],
