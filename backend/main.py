@@ -21,6 +21,8 @@ app.add_middleware(
                    "http://localhost:5174", 
                    "https://resume-generator-git.vercel.app",
                    "https://resume-generator-gitl.vercel.app",
+                   "https://resume-generator-gilt.vercel.app",
+                   "https://resume-generator-unzevas-projects.vercel.app",
                    "https://resume-generator-git-main-unzevas-projects.vercel.app",
                    "https://resume-generator-ibq3132ev-unzevas-projects.vercel.app",
                    ],
