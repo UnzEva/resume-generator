@@ -149,7 +149,7 @@ const ResumeGenerator: React.FC = () => {
           Resume Generator
         </Typography>
 
-        <Box mb={3}>
+        <Box sx={{ mb: 3 }}>
           <Button
             variant="contained"
             component="label"
@@ -174,7 +174,7 @@ const ResumeGenerator: React.FC = () => {
           )}
         </Box>
 
-        <Box mb={3}>
+        <Box sx={{ mb: 3 }}>
           <TextField
             label="Paste Vacancy Description"
             multiline
@@ -186,7 +186,7 @@ const ResumeGenerator: React.FC = () => {
           />
         </Box>
 
-        <Box mb={3}>
+        <Box sx={{ mb: 3 }}>
           <Typography variant="h5" align="center" gutterBottom>
             Options
           </Typography>
@@ -239,7 +239,7 @@ const ResumeGenerator: React.FC = () => {
           </FormGroup>
         </Box>
 
-        <Stack spacing={2} mb={3}>
+        <Stack spacing={2} sx={{ mb: 3 }}>
           <Button
             variant="contained"
             color="primary"
@@ -275,12 +275,14 @@ const ResumeGenerator: React.FC = () => {
         </Stack>
 
         {loading && (
-          <Box
-            mb={3}
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
-            gap={2}
+          <Box 
+            sx={{ 
+              mb: 3,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              gap: 2,
+            }}
           >
             <CircularProgress size={24} />
             <Typography variant="body1">
@@ -289,7 +291,7 @@ const ResumeGenerator: React.FC = () => {
           </Box>
         )}
 
-        <Box mt={2}>
+        <Box sx={{ mt: 2 }}>
           <TextField
             multiline
             rows={16}
