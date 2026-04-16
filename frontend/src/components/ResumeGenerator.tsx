@@ -82,8 +82,9 @@ const ResumeGenerator: React.FC = () => {
     try {
       setLoading(true);
       setResult("Generating resume, please wait...");
-
-      const response = await fetch("http://127.0.0.1:8000/generate", {
+      
+      const apiBaseUrl = import.meta.env.VITE_API_URL;
+      const response = await fetch(`${apiBaseUrl}/generate`, {
         method: "POST",
         body: formData,
       });
